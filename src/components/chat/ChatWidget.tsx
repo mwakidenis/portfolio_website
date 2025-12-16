@@ -37,7 +37,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
         status: "read",
       },
       {
-        content: "I'm Marklogic, Marklewis's personal AI assistant. Good to see you... uhmm",
+        content: "I'm DenisBot, Mwaki Denis's personal AI assistant. Good to see you... uhmm",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
