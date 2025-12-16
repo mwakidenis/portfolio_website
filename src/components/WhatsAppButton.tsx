@@ -11,7 +11,7 @@ interface WhatsAppButtonProps {
 
 const WhatsAppButton = ({ 
   phoneNumber, 
-  message = "Hi Marklewis! I love your portfolio and would like to discuss a potential project. Are you available?",
+  message = "Hi Mwaki Denis! I love your portfolio and would like to discuss a potential project. Are you available?",
   testimonialCount = 25
 }: WhatsAppButtonProps) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -41,7 +41,7 @@ const WhatsAppButton = ({
 
   const handleClick = () => {
     // Format the WhatsApp URL with phone number and encoded message
-    const whatsappUrl = `https://wa.me/${+254790767347}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${+254798750585}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
