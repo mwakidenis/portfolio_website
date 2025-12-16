@@ -20,7 +20,7 @@ export const blogPosts = [
     date: "March 15, 2024",
     category: "Development",
     readTime: "8 min read",
-    author: "Mark Lewis",
+    author: "Mwaki Denis",
     image: "/react.jpeg",
     tags: ["React", "Performance", "JavaScript"]
   },
@@ -44,7 +44,7 @@ export const blogPosts = [
     date: "February 10, 2024",
     category: "Case Study",
     readTime: "10 min read",
-    author: "Mark Lewis",
+    author: "Mwaki Denis",
     image: "/SDLC.jpeg",
     tags: ["Project Management", "Web Development", "Case Study"]
   },
