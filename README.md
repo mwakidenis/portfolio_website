@@ -141,4 +141,4 @@ This portfolio was crafted to reflect my passion for software development, clean
 
 ---
 
-Made with ❤️ by **Marklewis Mutugi**
+Made with ❤️ by **Mwaki Denis**
