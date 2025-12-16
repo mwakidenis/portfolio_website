@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
       role: "CEO, TechStart"
     },
     {
-      content: "Mwaki Denisis has a rare ability to translate complex technical requirements into beautiful, intuitive interfaces. He's a true professional who delivers exceptional results. A joy to work with! ✨",
+      content: "Mwaki Denis is has a rare ability to translate complex technical requirements into beautiful, intuitive interfaces. He's a true professional who delivers exceptional results. A joy to work with! ✨",
       author: "David Kaje",
       role: "Product Manager, InnovateCorp"
     },
