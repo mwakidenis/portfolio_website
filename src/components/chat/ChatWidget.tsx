@@ -85,7 +85,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "story-mode",
     messages: [
       {
-        content: "What side of Marklewis's life would you like us to discuss?",
+        content: "What side of Mwaki's life would you like us to discuss?",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -116,7 +116,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
         status: "read",
       },
       {
-        content: "What side of Marklewis's life would you like us to discuss?",
+        content: "What side of Mwaki's life would you like us to discuss?",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -133,7 +133,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "general-life",
     messages: [
       {
-        content: "Marklewis Mutugi is passionate about technology and innovation. Outside of work, he enjoys exploring new tech trends, contributing to open source projects, and sharing knowledge with the tech community.",
+        content: "Mwaki Denis is passionate about technology and innovation. Outside of work, he enjoys exploring new tech trends, contributing to open source projects, and sharing knowledge with the tech community.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -160,7 +160,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
         status: "read",
       },
       {
-        content: "Marklewis believes in continuous learning and personal growth. He balances his technical pursuits with interests in design thinking and user experience. His approach to problem-solving combines analytical thinking with creative solutions.",
+        content: "Mwaki Denis believes in continuous learning and personal growth. He balances his technical pursuits with interests in design thinking and user experience. His approach to problem-solving combines analytical thinking with creative solutions.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -182,7 +182,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "hobbies",
     messages: [
       {
-        content: "Outside of coding and design, Marklewis enjoys photography, reading tech blogs, and experimenting with new gadgets. He's also passionate about fitness and occasionally goes hiking to disconnect and recharge.",
+        content: "Outside of coding and design, Denis enjoys photography, reading tech blogs, and experimenting with new gadgets. He's also passionate about fitness and occasionally goes hiking to disconnect and recharge.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -197,7 +197,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "hobbies-more",
     messages: [
       {
-        content: "Marklewis is also interested in digital minimalism and finding ways technology can enhance rather than distract from meaningful experiences. He enjoys attending tech meetups and conferences to network with like-minded professionals.",
+        content: "Denis is also interested in digital minimalism and finding ways technology can enhance rather than distract from meaningful experiences. He enjoys attending tech meetups and conferences to network with like-minded professionals.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -211,7 +211,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "aspirations",
     messages: [
       {
-        content: "Marklewis aspires to create technology that makes a positive impact on people's lives. He's passionate about building accessible, user-friendly applications that solve real problems.",
+        content: "Denis aspires to create technology that makes a positive impact on people's lives. He's passionate about building accessible, user-friendly applications that solve real problems.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -231,7 +231,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "professional-life",
     messages: [
       {
-        content: "Marklewis Mutugi is a passionate front-end developer with expertise in building responsive web applications. He practices various IT disciplines including UI/UX design, web development, and software development lifecycle management. He seeks to grow through encountering problems then constructing solid solutions.",
+        content: "Mwaki Denis is a passionate front-end developer with expertise in building responsive web applications. He practices various IT disciplines including UI/UX design, web development, and software development lifecycle management. He seeks to grow through encountering problems then constructing solid solutions.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -275,7 +275,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "uiux-design",
     messages: [
       {
-        content: "Marklewis has expertise in UI/UX design, focusing on creating intuitive and engaging user interfaces. His design philosophy centers around user-centric approaches that enhance usability while maintaining aesthetic appeal. He uses tools like Figma and Adobe XD to prototype and iterate designs before implementation.",
+        content: "Denis has expertise in UI/UX design, focusing on creating intuitive and engaging user interfaces. His design philosophy centers around user-centric approaches that enhance usability while maintaining aesthetic appeal. He uses tools like Figma and Adobe XD to prototype and iterate designs before implementation.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -297,7 +297,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "design-process",
     messages: [
       {
-        content: "Marklewis follows a user-centered design process that begins with research and understanding user needs. He creates personas, user flows, and wireframes before moving to high-fidelity designs. He believes in iterative design with regular user testing to refine the experience.",
+        content: "Denis follows a user-centered design process that begins with research and understanding user needs. He creates personas, user flows, and wireframes before moving to high-fidelity designs. He believes in iterative design with regular user testing to refine the experience.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -325,7 +325,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "web-development",
     messages: [
       {
-        content: "Marklewis excels in web development with proficiency in React, TypeScript, and modern front-end frameworks. He builds responsive, accessible, and performant web applications with clean, maintainable code. His development approach emphasizes component-based architecture and efficient state management.",
+        content: Denis excels in web development with proficiency in React, TypeScript, and modern front-end frameworks. He builds responsive, accessible, and performant web applications with clean, maintainable code. His development approach emphasizes component-based architecture and efficient state management.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -347,7 +347,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "frontend-tech",
     messages: [
       {
-        content: "Marklewis specializes in React.js ecosystem with TypeScript for type safety. He's experienced with state management solutions like Redux and Zustand, and styling approaches including Styled Components and Tailwind CSS. He stays current with modern build tools and performance optimization techniques.",
+        content: "Denis specializes in React.js ecosystem with TypeScript for type safety. He's experienced with state management solutions like Redux and Zustand, and styling approaches including Styled Components and Tailwind CSS. He stays current with modern build tools and performance optimization techniques.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -361,7 +361,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "dev-philosophy",
     messages: [
       {
-        content: "Marklewis believes in writing clean, maintainable code that solves real problems. He values accessibility and performance as core aspects of development, not afterthoughts. He approaches projects iteratively, focusing on delivering working software that can be continuously improved.",
+        content: "Denis believes in writing clean, maintainable code that solves real problems. He values accessibility and performance as core aspects of development, not afterthoughts. He approaches projects iteratively, focusing on delivering working software that can be continuously improved.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -375,7 +375,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "sdlc-management",
     messages: [
       {
-        content: "Marklewis understands the full software development lifecycle, from initial requirements gathering through deployment and maintenance. He's experienced with agile methodologies and version control systems like Git, ensuring efficient collaboration on projects of all sizes.",
+        content: "Denis understands the full software development lifecycle, from initial requirements gathering through deployment and maintenance. He's experienced with agile methodologies and version control systems like Git, ensuring efficient collaboration on projects of all sizes.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -397,7 +397,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "project-management",
     messages: [
       {
-        content: "Marklewis has experience with agile project management, particularly Scrum and Kanban methodologies. He's comfortable working with tools like Jira and Trello for task tracking and appreciates the importance of clear communication in team settings.",
+        content: "Denis has experience with agile project management, particularly Scrum and Kanban methodologies. He's comfortable working with tools like Jira and Trello for task tracking and appreciates the importance of clear communication in team settings.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -411,7 +411,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "cicd-practices",
     messages: [
       {
-        content: "Marklewis implements continuous integration and deployment practices using tools like GitHub Actions and Jenkins. He values automated testing and believes in building robust pipelines that maintain code quality while enabling fast, reliable deployments.",
+        content: "Denis implements continuous integration and deployment practices using tools like GitHub Actions and Jenkins. He values automated testing and believes in building robust pipelines that maintain code quality while enabling fast, reliable deployments.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -425,7 +425,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "sandbox-mode",
     messages: [
       {
-        content: "In Sandbox mode, you can ask me anything about Marklewis's portfolio, skills, or projects. What would you like to know?",
+        content: "In Sandbox mode, you can ask me anything about Mwaki Denis's portfolio, skills, or projects. What would you like to know?",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -438,7 +438,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "sandbox-response",
     messages: [
       {
-        content: "Thanks for your question! Marklewis has expertise in React, TypeScript, Tailwind CSS, and UI/UX design. You can see examples of his work in the projects section of this portfolio. For more specific details, feel free to reach out directly via the contact form.",
+        content: "Thanks for your question! Mwaki Denis has expertise in React, TypeScript, Tailwind CSS, and UI/UX design. You can see examples of his work in the projects section of this portfolio. For more specific details, feel free to reach out directly via the contact form.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -460,7 +460,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "ask-projects",
     messages: [
       {
-        content: "Marklewis has worked on various projects including responsive web applications, UI/UX redesigns, and interactive dashboards. His portfolio showcases his ability to combine aesthetic design with functional implementation.",
+        content: "Denis has worked on various projects including responsive web applications, UI/UX redesigns, and interactive dashboards. His portfolio showcases his ability to combine aesthetic design with functional implementation.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -481,7 +481,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "ask-skills",
     messages: [
       {
-        content: "Marklewis's technical skills include React.js, TypeScript, CSS/SCSS, Tailwind CSS, and various UI component libraries. He's proficient in version control with Git and familiar with CI/CD pipelines.",
+        content: "Mwaki Denis's technical skills include React.js, TypeScript, CSS/SCSS, Tailwind CSS, and various UI component libraries. He's proficient in version control with Git and familiar with CI/CD pipelines.",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -502,7 +502,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "action-mode",
     messages: [
       {
-        content: "In Action mode, you can directly navigate to different sections of Marklewis's portfolio. Where would you like to go?",
+        content: "In Action mode, you can directly navigate to different sections of Mwaki Denis's portfolio. Where would you like to go?",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -576,7 +576,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
     id: "pricing-mode",
     messages: [
       {
-        content: "You're interested in website pricing? Great! Marklewis offers various website solutions at competitive rates in Kenyan Shillings (KES).",
+        content: "You're interested in website pricing? Great! Denis offers various website solutions at competitive rates in Kenyan Shillings (KES).",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -606,7 +606,7 @@ const CONVERSATION_STEPS: Record<string, ConversationStep> = {
         status: "read",
       },
       {
-        content: "• Basic Portfolio: KES 20,000 - 35,000\n• Advanced Portfolio (with blog): KES 40,000 - 60,000\n• Premium Portfolio (with advanced features): KES 65,000 - 90,000",
+        content: "• Basic Portfolio: KES 15,000 - 35,000\n• Advanced Portfolio (with blog): KES 40,000 - 60,000\n• Premium Portfolio (with advanced features): KES 65,000 - 90,000",
         timestamp: new Date(),
         sender: "admin",
         status: "read",
@@ -924,12 +924,12 @@ const ChatWidget = ({ isOpen, onClose }: ChatWidgetProps) => {
             <div className="flex items-center gap-2">
               <div className="relative">
                 <div className="h-10 w-10 rounded-full overflow-hidden">
-                  <img src="/myPic.jpg" alt="Marklewis Mutugi" className="h-full w-full object-cover" />
+                  <img src="/20240814_132224.jpg" alt="Mwaki Denis" className="h-full w-full object-cover" />
                 </div>
                 <span className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-green-500 border-2 border-background"></span>
               </div>
               <div>
-                <h3 className="font-medium">Marklogic</h3>
+                <h3 className="font-medium">DenisBot</h3>
                 <p className="text-xs text-muted-foreground">Marklewis's personal assistant</p>
               </div>
             </div>
