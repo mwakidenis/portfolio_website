@@ -8,7 +8,7 @@ export const blogPosts = [
     date: "April 2, 2024",
     category: "Design",
     readTime: "5 min read",
-    author: "Mark Lewis",
+    author: "Mwaki Denis",
     image: "/uiux.jpeg",
     tags: ["UI/UX", "Design Trends", "Web Design"]
   },
@@ -32,7 +32,7 @@ export const blogPosts = [
     date: "February 28, 2024",
     category: "Design",
     readTime: "6 min read",
-    author: "Mark Lewis",
+    author: "Mwaki Denis",
     image: "/DesignSystem.jpeg",
     tags: ["Design Systems", "Product Design", "Consistency"]
   },
@@ -56,7 +56,7 @@ export const blogPosts = [
     date: "January 25, 2024",
     category: "Development",
     readTime: "7 min read",
-    author: "Mark Lewis",
+    author: "Mwaki Denis",
     image: "/uiux.jpeg",
     tags: ["Accessibility", "Web Development", "Inclusion"]
   },
@@ -68,7 +68,7 @@ export const blogPosts = [
     date: "January 15, 2024",
     category: "Development",
     readTime: "9 min read",
-    author: "Mark Lewis",
+    author: "Mwaki Denis",
     image: "/react.jpeg", 
     tags: ["Frontend", "Web Development", "Technology Trends"]
   }
