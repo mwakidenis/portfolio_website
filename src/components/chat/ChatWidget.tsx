@@ -930,7 +930,7 @@ const ChatWidget = ({ isOpen, onClose }: ChatWidgetProps) => {
               </div>
               <div>
                 <h3 className="font-medium">DenisBot</h3>
-                <p className="text-xs text-muted-foreground">Marklewis's personal assistant</p>
+                <p className="text-xs text-muted-foreground">Denis's personal assistant</p>
               </div>
             </div>
           </div>
