@@ -18,7 +18,7 @@ const ChatMessage = ({ content, timestamp, sender, status = "sent" }: ChatMessag
       {!isUser && (
         <Avatar className="h-8 w-8">
           <AvatarImage src="/20240814_132224.jpg" alt="DenisBot" />
-          <AvatarFallback>MD</AvatarFallback>
+          <AvatarFallback>DB</AvatarFallback>
         </Avatar>
       )}
       
