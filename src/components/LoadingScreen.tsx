@@ -214,7 +214,7 @@ export default function LoadingScreen() {
               />
             </div>
             <p className="text-xs md:text-sm text-gray-300 text-center mt-3">
-              Booting up your software portfolio... 🚀
+              Booting up developer portfolio... 🚀
             </p>
           </div>
         </div>
