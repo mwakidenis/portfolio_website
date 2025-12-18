@@ -138,10 +138,10 @@
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
   
-  .dark .text-gradient {
-    @apply bg-gradient-to-r from-primary via-accent to-purple-400 bg-clip-text text-transparent;
-  }
-  
+ .dark .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-accent bg-clip-text text-transparent;
+}
+
   .section-padding {
     @apply py-20 px-6 md:px-10 lg:px-20;
   }
