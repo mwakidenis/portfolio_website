@@ -1,4 +1,3 @@
-
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeading from "@/components/SectionHeading";
 import CertificateCard from "@/components/CertificateCard";
@@ -11,49 +10,56 @@ const EducationSection = () => {
       issuer: "10Alytics", 
       date: "2025", 
       icon: <Medal />, 
-      imageUrl: "/1458242025-12-16.png" 
+      imageUrl: "/1458242025-12-16.png",
+      pdfUrl: "/certificates/10Alytics_Global_Hackathon.pdf"
     },
     { 
       title: "CISCO Get Connected", 
       issuer: "Cisco Networking Academy", 
       date: "2024", 
       icon: <Award />,
-      imageUrl: "/cisco_2025-12-16 155548.png" 
+      imageUrl: "/cisco_2025-12-16 155548.png",
+      pdfUrl: "/certificates/CISCO_Get_Connected.pdf"
     },
     { 
       title: "Responsive Web Design", 
       issuer: "freecodecamp", 
       date: "2025", 
       icon: <Medal />,
-      imageUrl: "/freecodecamp.org_certification_fccfe0925ac-797f-454c-8125-91fa70610602_responsive-web-design.jpg" 
+      imageUrl: "/freecodecamp.org_certification_fccfe0925ac-797f-454c-8125-91fa70610602_responsive-web-design.jpg",
+      pdfUrl: "/certificates/Responsive_Web_Design.pdf"
     },
     { 
       title: "Advanced JavaScript Certification", 
       issuer: "GreatStack", 
       date: "2025", 
       icon: <Award />,
-      imageUrl: "/java_script_completion_cert(01).png" 
+      imageUrl: "/java_script_completion_cert(01).png",
+      pdfUrl: "/certificates/Advanced_JavaScript.pdf"
     },
     { 
       title: "Annual Engineering Students", 
       issuer: "AES-TUK", 
       date: "2019", 
       icon: <Award />,
-      imageUrl: "/tuk- 2025-12-16 160557.png" 
+      imageUrl: "/tuk- 2025-12-16 160557.png",
+      pdfUrl: "/certificates/Annual_Engineering_Students.pdf"
     },
     { 
       title: "Software Engineering Job Simulation", 
       issuer: "Forage", 
       date: "2024", 
       icon: <Medal />,
-      imageUrl: "/Screenshot 2025-12-16 155033.png"
+      imageUrl: "/Screenshot 2025-12-16 155033.png",
+      pdfUrl: "/certificates/Software_Engineering_Job_Simulation.pdf"
     },
-      { 
-      title: "Career Boost with Power  BI and AI", 
+    { 
+      title: "Career Boost with Power BI and AI", 
       issuer: "Power BI", 
       date: "2025", 
       icon: <Award />,
-      imageUrl: "/Screenshot 2025-12-19 000720.png"
+      imageUrl: "/Screenshot 2025-12-19 000720.png",
+      pdfUrl: "/certificates/Career_Boost_PowerBI_AI.pdf"
     }
   ];
 
@@ -125,6 +131,7 @@ const EducationSection = () => {
                   date={cert.date}
                   icon={cert.icon}
                   imageUrl={cert.imageUrl}
+                  certificateLink={cert.pdfUrl} // <-- pass PDF URL here
                 />
               </ScrollReveal>
             ))}
