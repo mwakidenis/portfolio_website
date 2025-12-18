@@ -10,7 +10,7 @@ const EducationSection = () => {
       title: "10ALYTICS GLOBAL HACKATHON", 
       issuer: "10Alytics", 
       date: "2025", 
-      icon: <Clipboard />,
+      icon: <Medal />, <Award />,
       imageUrl: "/1458242025-12-16.png" 
     },
     { 
@@ -31,7 +31,7 @@ const EducationSection = () => {
       title: "Advanced JavaScript Certification", 
       issuer: "GreatStack", 
       date: "2025", 
-      icon: <Clipboard />,
+      icon: <Award />,
       imageUrl: "/java_script_completion_cert(01).png" 
     },
     { 
@@ -47,6 +47,13 @@ const EducationSection = () => {
       date: "2024", 
       icon: <Medal />,
       imageUrl: "/Screenshot 2025-12-16 155033.png"
+    },
+      { 
+      title: "Career Boost with Power  BI and AI", 
+      issuer: "Power BI", 
+      date: "2024", 
+      icon: <Award />,
+      imageUrl: "/Screenshot 2025-12-19 000720.png"
     }
   ];
 
