@@ -101,27 +101,32 @@ class Controller {
     switch (event.keyCode) {
       case Controller.#KEY_CODES.SPACE:
       case Controller.#KEY_CODES.ENTER:
+        event.preventDefault();
         this.#handlePauseOrRestart(gameState);
         break;
       case Controller.#KEY_CODES.LEFT_ARROW:
+        event.preventDefault();
         if (this.#isPlaying && !gameState.isGameOver) {
           this.#game.moveTetrominoLeft();
           this.#updateView();
         }
         break;
       case Controller.#KEY_CODES.UP_ARROW:
+        event.preventDefault();
         if (this.#isPlaying && !gameState.isGameOver) {
           this.#game.rotateTetromino();
           this.#updateView();
         }
         break;
       case Controller.#KEY_CODES.RIGHT_ARROW:
+        event.preventDefault();
         if (this.#isPlaying && !gameState.isGameOver) {
           this.#game.moveTetrominoRight();
           this.#updateView();
         }
         break;
       case Controller.#KEY_CODES.DOWN_ARROW:
+        event.preventDefault();
         if (this.#isPlaying && !gameState.isGameOver) {
           this.#stopDropTimer();
           this.#game.moveTetrominoDown();
@@ -644,6 +649,19 @@ const TetrisSection = () => {
     setIsGamePlaying(playing);
   };
 
+  const gameContainerStyle = isGamePlaying ? {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    zIndex: 1000,
+    width: '480px',
+    height: '640px'
+  } : {
+    width: '480px',
+    height: '640px'
+  };
+
   useEffect(() => {
     const preventScroll = (e: WheelEvent) => {
       if (isGamePlaying) {
@@ -691,7 +709,7 @@ const TetrisSection = () => {
             <div
               ref={canvasRef}
               className="border-2 border-primary/20 rounded-lg p-4 bg-black"
-              style={{ width: '480px', height: '640px' }}
+              style={gameContainerStyle}
             />
           </div>
           <div className="text-center mt-4 text-sm text-muted-foreground">
