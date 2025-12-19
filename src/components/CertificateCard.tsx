@@ -78,7 +78,7 @@ const CertificateCard = ({
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()} // prevent loader
-              className="mt-4 md:mt-0 inline-flex items-center gap-2 px-4 py-2 bg-primary text-background font-semibold rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap"
+              className="mt-4 md:mt-0 inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap"
             >
               View Certificate
               <ArrowUpRight className="h-4 w-4" />
