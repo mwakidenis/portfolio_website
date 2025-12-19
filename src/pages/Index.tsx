@@ -19,6 +19,7 @@ const EducationSection = lazy(() => import('@/components/sections/EducationSecti
 const ProjectsSection = lazy(() => import('@/components/sections/ProjectsSection'));
 const BlogSection = lazy(() => import('@/components/sections/BlogSection'));
 const TestimonialsSection = lazy(() => import('@/components/sections/TestimonialsSection'));
+const TetrisSection = lazy(() => import('@/components/sections/TetrisSection'));
 const ContactSection = lazy(() => import('@/components/sections/ContactSection'));
 const RatingSection = lazy(() => import('@/components/sections/RatingSection'));
 const NewsletterSection = lazy(() => import('@/components/sections/NewsletterSection'));
@@ -161,7 +162,11 @@ const Index = () => {
           <Suspense fallback={<SectionSkeleton />}>
             <TestimonialsSection />
           </Suspense>
-          
+
+          <Suspense fallback={<SectionSkeleton />}>
+            <TetrisSection />
+          </Suspense>
+
           <Suspense fallback={<SectionSkeleton />}>
             <ContactSection />
           </Suspense>
