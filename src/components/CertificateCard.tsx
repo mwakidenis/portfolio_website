@@ -54,28 +54,29 @@ const CertificateCard = ({
           {icon}
         </div>
 
-        {/* Text */}
-        <div className="flex-1">
-          <h3 className="font-bold text-lg">{title}</h3>
-          <p className="text-primary">{issuer}</p>
-          <div className="mt-2 flex items-center gap-2">
-            <span className="text-sm text-muted-foreground">{date}</span>
-            <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">Verified ✓</span>
+        {/* Text + Button in one row */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 flex-1">
+          <div className="flex-1">
+            <h3 className="font-bold text-lg">{title}</h3>
+            <p className="text-primary">{issuer}</p>
+            <div className="mt-2 flex items-center gap-2">
+              <span className="text-sm text-muted-foreground">{date}</span>
+              <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">Verified ✓</span>
+            </div>
           </div>
-        </div>
 
-        {/* Button at the bottom */}
-        {certificateLink && (
-          <a
-            href={certificateLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()} // prevents triggering any loader
-            className="mt-4 inline-flex items-center justify-center px-4 py-2 bg-primary text-background font-semibold rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap self-start"
-          >
-            View Certificate
-          </a>
-        )}
+          {certificateLink && (
+            <a
+              href={certificateLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()} // prevent loader
+              className="mt-4 md:mt-0 inline-flex items-center justify-center px-4 py-2 bg-primary text-background font-semibold rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap"
+            >
+              View Certificate
+            </a>
+          )}
+        </div>
       </CardContent>
     </Card>
   );
