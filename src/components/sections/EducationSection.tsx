@@ -19,7 +19,7 @@ const EducationSection = () => {
       date: "2025", 
       icon: <Medal />, 
       imageUrl: "/1458242025-12-16.png",
-      pdfUrl: "/certificates/Kaaria_Denis_Hackathon_Certificate(1).pdf"
+      pdfUrl: "/Kaaria_Denis_Hackathon_Certificate(1).pdf"
     },
     { 
       title: "CISCO Get Connected", 
