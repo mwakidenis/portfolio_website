@@ -35,7 +35,7 @@ const EducationSection = () => {
       date: "2025", 
       icon: <Medal />,
       imageUrl: "/freecodecamp.org_certification_fccfe0925ac-797f-454c-8125-91fa70610602_responsive-web-design.jpg",
-      pdfUrl: "/certificates/Responsive_Web_Design.pdf"
+      pdfUrl: "/Adobe Scan Dec 19, 2025.pdf"
     },
     { 
       title: "Advanced JavaScript Certification", 
@@ -43,7 +43,7 @@ const EducationSection = () => {
       date: "2025", 
       icon: <Award />,
       imageUrl: "/java_script_completion_cert(01).png",
-      pdfUrl: "/certificates/Advanced_JavaScript.pdf"
+      pdfUrl: "/Adobe Scan Dec 19, 2025 (1).pdf"
     },
     { 
       title: "Annual Engineering Students", 
