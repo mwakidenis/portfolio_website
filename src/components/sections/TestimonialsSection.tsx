@@ -13,7 +13,7 @@ import {
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      content: "Working with Denis was a game-changer for our startup. His technical skills combined with his eye for design helped us create a product that our users love. Can't recommend him enough! 🚀",
+      content: "Working with Denis was a game-changer for our startup. His technical skills combined with his eye for design helped us create a product that our users love ❤️. He’s someone you definitely want on your team!",
       author: "Sarah Kimani",
       role: "CEO, TechStart"
     },
