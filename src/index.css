@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* Root variables */
   :root {
     --background: 232 45% 98%;
     --foreground: 248 40% 10%;
@@ -26,7 +27,6 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 200 80% 60%;
     --radius: 0.75rem;
-
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 200 80% 60%;
@@ -57,7 +57,6 @@
     --border: 246 25% 20%;
     --input: 246 25% 20%;
     --ring: 200 80% 60%;
-
     --sidebar-background: 246 30% 10%;
     --sidebar-foreground: 210 40% 98%;
     --sidebar-primary: 200 80% 60%;
@@ -70,10 +69,7 @@
 
   /* Global resets */
   * {
-    @apply border-border;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    @apply border-border m-0 p-0 box-border;
   }
 
   html {
@@ -83,7 +79,7 @@
     -webkit-tap-highlight-color: transparent;
     width: 100%;
     overflow-x: hidden;
-    font-size: 16px; /* Base font size */
+    font-size: 16px;
   }
 
   body {
@@ -118,7 +114,8 @@
   }
 
   .glass-border {
-    @apply relative rounded-lg overflow-hidden bg-card border border-primary/20 transition-all hover:border-primary/40 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl p-4 sm:p-6 md:p-8;
+    @apply relative rounded-lg overflow-hidden bg-card border border-primary/20 transition-all p-4 sm:p-6 md:p-8;
+    @apply w-1/2 sm:w-1/2 md:w-full lg:w-full xl:w-full;
   }
   .dark .glass-border {
     @apply border-primary/30 hover:border-primary/50 shadow-lg shadow-primary/10;
@@ -144,7 +141,7 @@
 
   /* Responsive containers */
   .responsive-grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10;
+    @apply grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10;
   }
 
   .responsive-flex {
@@ -156,7 +153,7 @@
     @apply w-full h-auto max-w-full object-cover;
   }
 
-  /* Utility for text scaling on small screens */
+  /* Utility for text scaling */
   .responsive-text {
     @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
@@ -170,6 +167,7 @@
       @apply p-3;
     }
   }
+
   @media (min-width: 1536px) {
     .responsive-grid {
       @apply grid-cols-5 gap-12;
