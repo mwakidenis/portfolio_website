@@ -48,7 +48,8 @@ const HeroSection = () => {
             
             <ScrollReveal delay={600} direction="left">
               <p className="text-base md:text-xl text-muted-foreground">
-             Driven by quality and performance mindset, I craft elegant products that users love ❤️ and businesses value 💻</p>
+             Driven by quality and performance mindset, I craft elegant products that users love ❤️ and businesses value 💻. I am primarily focusing on scalable architecture, algorithmic efficiency, and resilient deployment
+              </p>
             </ScrollReveal>
             
             <ScrollReveal delay={800} direction="left">
