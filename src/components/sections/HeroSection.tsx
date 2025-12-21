@@ -36,7 +36,7 @@ const HeroSection = () => {
           <div className="md:col-span-7 space-y-4 md:space-y-6 text-center md:text-left">
             <ScrollReveal delay={200} direction="left">
               <div className="inline-block glass px-3 py-1.5 rounded-full mb-2 text-xs sm:text-sm">
-                <span className="text-primary">✦</span> UI/UX Designer & Software Developer <span className="ml-1">🚀</span>
+                <span className="text-primary">✦</span> UI/UX Designer & Software Developer <span className="ml-1">✦</span>
               </div>
             </ScrollReveal>
             
