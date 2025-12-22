@@ -25,7 +25,7 @@ jobs:
 
           # Configure Git
           git config user.name "mwakidenis"
-          git config user.email "mwakidenis@gmail.com"
+          git config user.email "mwakidenice@gmail.com"
 
           # Stage changes
           git add "$TIMESTAMP_FILE"
