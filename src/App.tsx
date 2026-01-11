@@ -18,27 +18,31 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 5000); // match LoadingScreen duration
+    const timer = setTimeout(() => setIsLoading(false), 5000);
     return () => clearTimeout(timer);
   }, []);
 
-  if (isLoading) return <LoadingScreen />; // show loading screen on first load
+  if (isLoading) return <LoadingScreen />;
 
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <div className="w-full overflow-x-hidden">
+          {/* Wrapper that prevents horizontal overflow */}
+          <div className="w-full max-w-full overflow-x-hidden relative">
             <Toaster />
             <Sonner />
             <BrowserRouter>
               <ChatProvider>
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/blog" element={<Blog />} />
-                  <Route path="/blog/:id" element={<BlogPost />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
+                {/* Optional: Use a responsive container to avoid any extra overflow */}
+                <div className="w-full max-w-[100vw] mx-auto">
+                  <Routes>
+                    <Route path="/" element={<Index />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:id" element={<BlogPost />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </div>
               </ChatProvider>
             </BrowserRouter>
           </div>
@@ -49,4 +53,3 @@ const App = () => {
 };
 
 export default App;
-
