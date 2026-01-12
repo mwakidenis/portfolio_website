@@ -30,17 +30,17 @@ type Project = {
 
 // Create projects data
 const projects: Project[] = [
-  {
-    id: "1",
-    title: "Kazi-Haven Job Platform🧾",
-    description: "A modern job portal platform built with React, Node.js, and MongoDB. Features include job search, filtering, user authentication, application tracking, employer dashboards, and M-Pesa payment integration.",
-    imageSrc: "/JobPortal.png",
-    tags: ["React", "Node.js", "MongoDB", "Express", "Redux"],
-    liveDemoUrl: "https://kazi-haven.vercel.app/",
-    githubUrl: "https://github.com/mwakidenis/Kazi-Haven.git",
-    year: "2024",
+{
+    id: "2",
+    title: "Mpesa-Based Wi-Fi Hotspot Billing System 🧾",
+    description: "A fast, automated Hotspot Billing system powered by M-Pesa STK Push for instant, secure user access. Built with Node.js, MySQL, Next.js, and React, with optional MikroTik integration.",
+    imageSrc: "/JobPortal.png", 
+    tags: ["React", "Node.js", "Next.js", "MySQL", "Prisma", "M-Pesa"],
+    liveDemoUrl: "https://anotherone-production-dcdb.up.railway.app", // live demo URL
+    githubUrl: "https://github.com/mwakidenis/Mpesa-Based_Wi-Fi-Hotspot_Billing_System", 
+    year: "2026",
     type: "Web App"
-  },
+}
   {
     id: "2",
     title: "Tembea Afrika 🌍✈️",
