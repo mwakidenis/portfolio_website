@@ -38,20 +38,20 @@ const projects: Project[] = [
     tags: ["React", "Node.js", "Next.js", "MySQL", "Prisma", "M-Pesa", "MikroTik"],
     liveDemoUrl: "https://anotherone-production-dcdb.up.railway.app", // live demo URL
     githubUrl: "https://github.com/mwakidenis/Mpesa-Based_Wi-Fi-Hotspot_Billing_System", 
-    year: "2026",
+    year: "2025",
     type: "Web App"
 },
   {
-    id: "2",
-    title: "Tembea Afrika 🌍✈️",
-    description: "A modern tourism platform built with React, Node.js, and MongoDB. Features include destination search, category filtering, user authentication, itinerary planning, booking management, and M-Pesa payment integration.",
-    imageSrc: "/Tourism.png",
-    tags: ["React", "Firebase", "Redux", "Tailwind CSS", "TypeScript"],
-    liveDemoUrl: "https://tembea-africa.pages.dev/",
-    githubUrl: "https://github.com/mwakidenis/safaricom-hook-final-project-and-deployment-week-8-mwakidenis.git",
-    year: "2023",
-    type: "Web App"
-  },
+  id: "2",
+  title: "HornBill 🚀📡",
+  description: "A modern Mikrotik billing system inspired by iBNuX and built on the PHPNuxBill architecture. Features include payment gateway integration, SMS login validation, WhatsApp notifications for consumers, Telegram notifications for admins, advanced monitoring and analytics, and a modern user-friendly interface.",
+  imageSrc: "/hornbilll.png",
+  tags: ["PHP", "Mikrotik", "FreeRADIUS", "Firebase", "MPesa", "Telegram API", "WhatsApp API"],
+  liveDemoUrl: "https://mwakidenis.pages.dev/",
+  githubUrl: "https://github.com/mwakidenis/HornBill",
+  year: "2026",
+  type: "Mikrotik Billing System"
+},
   {
     id: "3",
     title: "🌱 AI-Powered Plant Health Assistant",
