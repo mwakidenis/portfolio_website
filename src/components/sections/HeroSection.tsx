@@ -27,12 +27,12 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden w-full"
+      className="w-full pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden"
     >
-      <div className="w-full px-4 mx-auto">
+      <div className="w-full px-4 mx-auto max-w-screen-xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-center">
           {/* TEXT */}
-          <div className="md:col-span-7 space-y-4 md:space-y-6 text-center md:text-left">
+          <div className="md:col-span-8 space-y-4 md:space-y-6 text-center md:text-left">
             <ScrollReveal delay={200} direction="left">
               <div className="inline-block glass px-3 py-1.5 rounded-full mb-2 text-xs sm:text-sm">
                 <span className="text-primary">✦</span> UI/UX Designer & Software
@@ -73,8 +73,8 @@ const HeroSection = () => {
           </div>
 
           {/* IMAGE */}
-          <ScrollReveal delay={1000} direction="right" className="md:col-span-5">
-            <div className="relative w-full max-w-full sm:max-w-[300px] md:max-w-[400px] aspect-square mx-auto overflow-hidden">
+          <ScrollReveal delay={1000} direction="right" className="md:col-span-4">
+            <div className="relative w-full max-w-full sm:max-w-[300px] md:max-w-[500px] lg:max-w-[600px] aspect-square mx-auto overflow-hidden">
               {!isMobile && (
                 <>
                   {/* Background blobs and effects */}
@@ -131,7 +131,7 @@ const HeroSection = () => {
               {/* Profile image with parallax */}
               <div className="absolute inset-0 flex items-center justify-center z-20">
                 <div
-                  className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[300px] md:h-[300px]"
+                  className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]"
                   style={{
                     transform:
                       isMounted && !isMobile
