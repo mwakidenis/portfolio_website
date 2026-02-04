@@ -46,7 +46,7 @@ const projects: Project[] = [
   title: "HornBill 🚀📡",
   description: "A modern Mikrotik billing system inspired by iBNuX and built on the PHPNuxBill architecture. Features include payment gateway integration, SMS login validation, WhatsApp notifications for consumers, Telegram notifications for admins, advanced monitoring and analytics, and a modern user-friendly interface.",
   imageSrc: "/hornbilll2.png",
-  tags: ["PHP", "Mikrotik", "FreeRADIUS", "Firebase", "MPesa", "Telegram API", "WhatsApp API"],
+  tags: ["PHP", "Mikrotik", "FreeRADIUS", "PostgreS", "MPesa", "Telegram API", "WhatsApp API"],
   liveDemoUrl: "https://mwakidenis.pages.dev/",
   githubUrl: "https://github.com/mwakidenis/HornBill",
   year: "2026",
