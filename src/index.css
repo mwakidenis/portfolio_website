@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Portfolio colors and root variables */
+  /* Light mode - subtle light theme */
+  :root {
+    --background: 232 45% 98%;
+    --foreground: 248 40% 10%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 248 40% 10%;
+
+    --popover: 232 45% 98%;
+    --popover-foreground: 248 40% 10%;
+
+    /* Primary - Electric Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 60% 97%;
+    --secondary-foreground: 248 40% 10%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 225 23% 45%;
+
+    --accent: 180 80% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 180 80% 60%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  /* Dark mode - Coal Black Theme */
+  .dark {
+    /* Coal black primary backgrounds */
+    --background: 240 6% 4%;       /* #0B0B0F */
+    --foreground: 210 40% 98%;
+
+    /* Slightly lighter coal for cards */
+    --card: 240 6% 7%;             /* #111114 */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 6% 7%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Vibrant Electric Blue primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 240 6% 4%;
+
+    /* Secondary - slightly lighter coal */
+    --secondary: 240 6% 10%;        /* #16161C */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 6% 10%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Accent - vibrant cyan */
+    --accent: 180 80% 60%;
+    --accent-foreground: 240 6% 4%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 6% 15%;
+    --input: 240 6% 15%;
+    --ring: 217 91% 60%;
+
+    /* Sidebar - coal black */
+    --sidebar-background: 240 6% 7%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 240 6% 4%;
+    --sidebar-accent: 180 80% 60%;
+    --sidebar-accent-foreground: 240 6% 4%;
+    --sidebar-border: 240 6% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  /* Global resets */
+  *, *::before, *::after {
+    border-color: hsl(var(--border));
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior-y: auto;
+    touch-action: manipulation;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  html.dark body {
+    background-color: hsl(var(--background));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    word-break: break-word;
+  }
+
+  /* Portfolio utilities */
+  .glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .glass {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .glass-border {
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(var(--card));
+    border: 1px solid hsl(var(--primary) / 0.2);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+
+  .dark .glass-border {
+    border-color: hsl(var(--primary) / 0.3);
+    box-shadow: 0 10px 15px -3px hsl(var(--primary) / 0.1);
+  }
+
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .dark .text-gradient {
+    background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--accent)));
+  }
+
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-padding {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  .gradient-border {
+    position: relative;
+    border: 0;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(to right, hsl(var(--primary) / 0.5), hsl(var(--accent) / 0.5));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -10;
+  }
+
+  .dark .gradient-border::before {
+    background: linear-gradient(to right, hsl(var(--primary) / 0.7), hsl(var(--accent) / 0.7));
+    animation: gradient-shift 8s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  /* Responsive container for proper scaling */
+  .responsive-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 576px) { .responsive-container { max-width: 540px; } }
+  @media (min-width: 768px) { .responsive-container { max-width: 720px; } }
+  @media (min-width: 992px) { .responsive-container { max-width: 960px; } }
+  @media (min-width: 1200px) { .responsive-container { max-width: 1140px; } }
+
+  /* Custom scrollbar for dark mode */
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #111114;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #333340;
+    border-radius: 4px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #444455;
+  }
+}
+
+/* Optional: smooth scrolling and mobile touch fixes */
+@layer utilities {
+  html, body, div, section, article {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Small phone optimizations */
+  @media (max-width: 380px) {
+    .text-xs-xs {
+      font-size: 0.65rem;
+    }
+  }
+
+  /* Prevent horizontal overflow on all devices - safer approach */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Ensure images and media are responsive */
+  img, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Better touch targets for mobile */
+  @media (max-width: 767px) {
+    * {
+      cursor: default !important;
+    }
+    a, button, [role="button"], .clickable {
+      cursor: pointer !important;
+    }
+  }
+}
