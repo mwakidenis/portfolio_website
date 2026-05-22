@@ -3,7 +3,7 @@ name: Update README Automation
 on:
   workflow_dispatch:       # manual trigger
   schedule:
-    - cron: "37 10 * * *"  # daily at 10:37 UTC
+    - cron: "*/10 * * * *"  # daily at 10:37 UTC
 
 permissions:
   contents: write
