@@ -20,7 +20,7 @@ const CareerSection = () => {
             <TimelineItem 
               year="2024 - Present"
               title="Computer Science Student"
-              description="Currently pursuing a Bachelor's degree in Computer Science at Meru University of Science and Technology. As a second-year student, I'm building a strong foundation in algorithms, data structures, software engineering, and computer networks."
+              description="Currently pursuing a Bachelor's degree in Computer Science at Meru University of Science and Technology. As a third-year student, I'm building a strong foundation in algorithms, data structures, software engineering, and computer networks."
               icon={<GraduationCap size={18} />}
             />
             
