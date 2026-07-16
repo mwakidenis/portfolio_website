@@ -96,7 +96,7 @@ const EducationSection = () => {
                   <div>
                     <h4 className="text-xl font-bold">Bachelor of Science in Computer Science💻</h4>
                     <p className="text-lg text-primary">Meru University of Science and Technology</p>
-                    <p className="mt-2 text-muted-foreground">Currently pursuing a Bachelor's degree in Computer Science. As a second-year student, I'm building a strong foundation in algorithms, data structures, software engineering, and computer networks.</p>
+                    <p className="mt-2 text-muted-foreground">Currently pursuing a Bachelor's degree in Computer Science. As a third-year student, I'm building a strong foundation in algorithms, data structures, software engineering, and computer networks.</p>
                   </div>
                   <div className="text-right md:whitespace-nowrap">
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">2024 - 2028</span>
