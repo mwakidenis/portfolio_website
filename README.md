@@ -10,7 +10,6 @@ This portfolio is more than just a webpage — it's a complete showcase of my jo
 ## 🔥 Features
 
 - 🎨 Beautiful UI/UX with **Dark/Light Mode Toggle**
-<<<<<<< HEAD
 - 📱 Fully responsive across all devices (320px - 2xl)
 - 💬 Chat Section with several sections
 - 🎬 Animated GIFs
@@ -24,7 +23,7 @@ This portfolio is more than just a webpage — it's a complete showcase of my jo
   - Live Demo Links
   - GitHub Repository Links
   - Dynamic Tech Stack Tags with vibrant colors
-=======
+
 - 📱 Fully responsive across all devices
 -  A Chat Section With Several sections😁😁😁😁😁😁😁😁
 -  Gifs 
@@ -53,8 +52,7 @@ This portfolio is more than just a webpage — it's a complete showcase of my jo
 - 📌 Sticky Navbar & Smooth Scrolling
 - 🔗 External Link Previews (with rich cards)
 - 🧠 Clean and maintainable TypeScript Codebase
-<<<<<<< HEAD
-=======
+
 - Added Pricing Info
 >>>>>>> 650c615b9e811d9733401503e6e894e73740400c
 
